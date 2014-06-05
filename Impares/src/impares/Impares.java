@@ -8,7 +8,7 @@ package impares;
 
 /**
  *
- * @author Karina
+ * @author Karina Mayumi Hirata Bueno
  */
 public class Impares {
 
