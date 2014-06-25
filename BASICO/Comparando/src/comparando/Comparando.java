@@ -1,22 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package comparando;
 
-/**
- *
- * @author Karina
- */
 import java.util.Scanner;
 
 public class Comparando {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         float num1, num2;
         int num3, num4;
@@ -43,12 +31,6 @@ public class Comparando {
         
         System.out.printf("%d + %d = %d\n", num3, num4, num3 + num4);
         System.out.printf("%d > %d -> %s\n", num3, num4, num3 > num4); 
-           
-                 
-        
-                
-        
-        // TODO code application logic here
     }
     
 }
