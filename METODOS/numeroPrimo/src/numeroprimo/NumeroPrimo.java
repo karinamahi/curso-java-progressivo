@@ -36,9 +36,6 @@ public class NumeroPrimo {
             if (isPrimo(i)) {
                 System.out.println(i);
             }
-
         }
-
     }
-
 }

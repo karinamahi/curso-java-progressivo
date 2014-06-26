@@ -1,18 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package listaparametromedianotas;
 
-/**
- *
- * @author Karina
- */
-
 import java.util.Scanner;
-
 
 public class ListaParametroMediaNotas {
 
@@ -35,7 +24,6 @@ public class ListaParametroMediaNotas {
         }
         return maior;
     }
-    
     
     public static float menor(float...notas){
         float menor = 10;
@@ -66,9 +54,7 @@ public class ListaParametroMediaNotas {
         System.out.printf("A maior nota é = %.2f\n", maior(nota1, nota2, nota3));
         System.out.printf("A menor nota é = %.2f\n", menor(nota1, nota2, nota3));
         System.out.printf("A segunda maior nota é = %.2f\n", (nota1 + nota2 + nota3) - (maior(nota1, nota2, nota3) + menor(nota1, nota2, nota3)));
-        System.out.printf("A média das duas maiores notas é = %,2f\n", (((nota1 + nota2 + nota3)- menor(nota1, nota2, nota3)))/2 ); 
-        
-              
+        System.out.printf("A média das duas maiores notas é = %.2f\n", (((nota1 + nota2 + nota3)- menor(nota1, nota2, nota3)))/2 ); 
     }
     
 }

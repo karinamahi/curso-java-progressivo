@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package equacaosegundograu;
 
-/**
- *
- * @author Karina
- */
 import java.util.Scanner;
 
 public class EquacaoSegundoGrau {
@@ -86,7 +77,6 @@ public class EquacaoSegundoGrau {
             raiz_dois = raizDois(delta, a, b);
             System.out.printf("x''= %d\n", raiz_dois);
         }
-
     }
 
 }

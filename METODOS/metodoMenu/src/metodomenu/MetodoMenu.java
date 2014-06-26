@@ -1,30 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package metodomenu;
 
-/**
- *
- * @author Karina
- */
 import java.util.Scanner;
 
 public class MetodoMenu {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void menu(){
-        System.out.println("\tCadastro de clientes");
+        System.out.println("\n\tCadastro de clientes");
         System.out.println("0. Fim");
         System.out.println("1. Inclui");
         System.out.println("2. Altera");
         System.out.println("3. Exclui");
         System.out.println("4. Consulta");
-        System.out.println("Opção: ");
+        System.out.print("Opção: ");
+    }
+    public static void fim(){
+         System.out.println("Você encerrou o cadastro.");
     }
     
     public static void inclui(){
@@ -43,7 +34,6 @@ public class MetodoMenu {
             System.out.println("Você entrou no método Consulta");
     }
     
-    
     public static void main(String[] args) {
         int opcao;
         Scanner entrada = new Scanner(System.in);
@@ -53,6 +43,10 @@ public class MetodoMenu {
             opcao = entrada.nextInt();
             
             switch(opcao){
+                case 0:
+                    fim();
+                    break;
+                    
                 case 1: 
                     inclui();
                     break;

@@ -1,18 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package listaparametrosmedia;
 
-/**
- *
- * @author Karina
- */
-
 import java.util.Scanner;
-
 
 public class ListaParametrosMedia {
     
@@ -25,7 +14,6 @@ public class ListaParametrosMedia {
             return media/valores.length;
 }
                
-
     public static void main(String[] args) {
         float valor1, valor2, valor3, valor4, valor5;
         Scanner entrada = new Scanner(System.in);
