@@ -1,22 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package switchteste2;
 
-/**
- *
- * @author Karina
- */
 import java.util.Scanner;
 
 public class SwitchTeste2 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         char vogal;
         Scanner entrada = new Scanner(System.in);
@@ -39,7 +26,5 @@ public class SwitchTeste2 {
             default :
                 System.out.println("Você não digitou uma vogal minúscula.");
         }
-                
     }
-    
 }

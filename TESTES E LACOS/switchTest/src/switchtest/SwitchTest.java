@@ -1,22 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package switchtest;
 
-/**
- *
- * @author Karina
- */
 import java.util.Scanner;
 
 public class SwitchTest {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         float numero1, numero2;
         char operacao;
@@ -47,7 +34,5 @@ public class SwitchTest {
             default:
                 System.out.println("VOcê digitou uma operação inválida.");
         }
-        
     }
-    
 }

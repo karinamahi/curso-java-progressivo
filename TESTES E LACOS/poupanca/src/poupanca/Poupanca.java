@@ -1,22 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package poupanca;
 
-/**
- *
- * @author Karina
- */
 import java.util.Scanner;
 
 public class Poupanca {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) { // calcula o rendimento da poupança + invesntimento mensal
+    public static void main(String[] args) { 
        
         float valor_i, montante,deposito_mensal, juros;
         int meses;
