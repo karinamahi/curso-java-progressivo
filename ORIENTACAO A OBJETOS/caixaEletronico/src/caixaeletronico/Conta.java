@@ -2,12 +2,19 @@
 package caixaeletronico;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Conta {
     private String nome;
     private int numConta;
     private float saldo;
-    
+                   int opcao;
+        float saque;
+        float deposito;
+        int qtdeDeSaques = 0;
+        boolean continuar = true;
+        Scanner entrada = new Scanner(System.in);
+        
     public void setNome(String nome){
         this.nome = nome.toUpperCase();
     }
@@ -30,6 +37,14 @@ public class Conta {
     
     public float getSaldo(){
         return this.saldo;
+    }
+    
+       public void menu() {
+        System.out.println("\nMENU");
+        System.out.println(" 1 - Consultar extrato");
+        System.out.println(" 2 - Saque");
+        System.out.println(" 3 - Depósito");
+        System.out.println(" 4 - Sair\n");
     }
     
      public int geraNumConta(){
@@ -64,5 +79,57 @@ public class Conta {
     
     public void depositar (float valorDoDeposito){
         this.saldo += valorDoDeposito;
+    }
+    
+    public void operacao(){
+         do {
+            menu();
+            System.out.print("Digite sua opção: ");
+            opcao = entrada.nextInt();
+
+            if (opcao == 4) {
+                continuar = false;
+                System.out.println("Sessão encerrada.");
+
+            } else {
+
+                switch (opcao) {
+                    case 1:
+                        extrato();
+                        break;
+
+                    case 2:
+                        if (qtdeDeSaques >= 3) {
+                            System.out.println("Limite de saques atingido");
+                            break;
+                            
+                        } else {
+                            System.out.print("Digite o valor do saque: ");
+                            saque = entrada.nextFloat();
+
+                            if (saldoSuficiente(saque) == false) {
+                                System.out.println("Saldo insuficiente");
+                                break;
+                                
+                            } else {
+                                sacar(saque);
+                                qtdeDeSaques += 1;
+                                extrato();
+                                break;
+                            }
+                        }
+
+                    case 3:
+                        System.out.print("Digite o valor do depósito: ");
+                        deposito = entrada.nextFloat();
+                        depositar(deposito);
+                        extrato();
+                        break;
+
+                    default:
+                        System.out.println("Opção inválida");
+                }
+            }
+        } while (continuar);
     }
 }
