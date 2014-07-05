@@ -8,11 +8,6 @@ public class CaixaEletronico {
         String nome;
         float saldo;
         int numConta;
-        int opcao;
-        float saque;
-        float deposito;
-        int qtdeDeSaques = 0;
-        boolean continuar = true;
 
         Conta cliente1 = new Conta();
 
