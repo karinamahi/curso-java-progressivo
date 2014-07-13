@@ -16,30 +16,25 @@ public class CaixaRegistradora {
 		item.setProduto(entrada.next());
 		System.out.print("Preco: ");
 		item.setPreco(entrada.nextFloat());
+		
 		RegistroDia.opcaoDia();
 		System.out.print("Opção: ");
 		dia = entrada.next().charAt(0);
-		
-		
 		promocao = RegistroDia.isDiaPromocao(dia);
+		
 		if (promocao == true){
-			System.out.println("\nCUPOM FISCAL");
-			System.out.println("Produto: " + item.getProduto());
-			System.out.printf("Preço:  R$ %.2f", item.calculaPromocao());	
+			CupomFiscal.imprimirCupomFiscal(item.getProduto(),item.calculaPromocao());
+			
 		}else{
 			Hora horaRegistrada = RegistroHorario.registraHora();
-			
-			System.out.println("\nCUPOM FISCAL");
-			System.out.println("Hora registrada: " + horaRegistrada);
-			
 			promocao = RegistroHorario.isHoraDaPromocao();
+			
 			if(promocao == true){
-				System.out.println("Produto: " + item.getProduto());
-				System.out.printf("Preço:  R$ %.2f", item.calculaPromocao());	
+				CupomFiscal.imprimirCupomFiscal(item.getProduto(),item.calculaPromocao());
+				System.out.println("Hora registrada: " + horaRegistrada);
 				
 			}else{
-				System.out.println("Produto: " + item.getProduto());
-				System.out.printf("Preço:  R$ %.2f", item.getPreco());				
+				CupomFiscal.imprimirCupomFiscal(item.getProduto(),item.getPreco());
 			}
 		}
 		

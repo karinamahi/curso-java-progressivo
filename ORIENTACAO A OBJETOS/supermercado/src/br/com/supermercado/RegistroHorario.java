@@ -3,15 +3,14 @@ package br.com.supermercado;
 import java.util.Scanner;
 
 public class RegistroHorario {
-		static int hour;
-		static int minute;
-		static int second;
-		
-	public static Hora registraHora(){
+	static int hour;
+	static int minute;
+	static int second;
 
-		
+	public static Hora registraHora() {
+
 		Scanner entrada = new Scanner(System.in);
-		
+
 		System.out.println("HORA DA COMPRA");
 		System.out.print("Hora: ");
 		hour = entrada.nextInt();
@@ -19,22 +18,19 @@ public class RegistroHorario {
 		minute = entrada.nextInt();
 		System.out.print("Segundos: ");
 		second = entrada.nextInt();
-		
-		Hora horaDaCompra = new Hora(hour,minute,second);
-		System.out.println("Hora da Compra: " + horaDaCompra);
+
+		Hora horaDaCompra = new Hora(hour, minute, second);
+		// System.out.println("Hora da Compra: " + horaDaCompra);
 		return horaDaCompra;
 	}
-	
-	public static boolean isHoraDaPromocao(/*int hour, int minute, int second*/){
+
+	public static boolean isHoraDaPromocao() {
 		boolean horaPromocao = false;
-		
-		if(hour>=20 && hour<=24){
+
+		if (hour >= 20 && hour <= 24) {
 			horaPromocao = true;
-			System.out.println("Com Desconto");
 		}
 		return horaPromocao;
 	}
-	
 
-	
 }
