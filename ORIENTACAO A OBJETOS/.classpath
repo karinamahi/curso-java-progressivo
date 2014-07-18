@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="caixaEletronico/src"/>
+	<classpathentry kind="src" path="controleHorario/src"/>
+	<classpathentry kind="src" path="metodosGetSet/src"/>
+	<classpathentry kind="src" path="petshop/src"/>
+	<classpathentry kind="src" path="primeiraClasse/src"/>
+	<classpathentry kind="src" path="supermercado/src"/>
+	<classpathentry kind="src" path="thisMetodo/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="thisMetodo/build/classes"/>
+</classpath>
