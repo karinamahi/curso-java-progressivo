@@ -57,6 +57,7 @@ public class RecursosHumanos {
 		
 		
 		//questão 5
+		
 		Funcionario funcionario4 = new Funcionario();
 		funcionario4.setNome("Jofrey");
 		funcionario4.setSalario(300);
