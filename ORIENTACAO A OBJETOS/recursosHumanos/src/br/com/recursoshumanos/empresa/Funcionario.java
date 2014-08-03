@@ -48,5 +48,12 @@ public class Funcionario {
 		return ganhoAnual;
 	}
 
+	public String toString(){
+		return "Nome: " + this.nome + " RG: " + this.rg;
+	}
 	
+	public boolean equals(Object object){
+		Funcionario func = (Funcionario) object;
+		return this.rg.equals(func.getRg());
+	}
 }
