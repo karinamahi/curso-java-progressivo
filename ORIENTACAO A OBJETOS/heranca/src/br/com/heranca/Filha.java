@@ -1,5 +1,6 @@
 package br.com.heranca;
 
+
 public class Filha extends Pai {
 
 	private String nomeFilha;
