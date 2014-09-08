@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="com/exercicios/src/" kind="src" path="exercicioArray/src"/>
+	<classpathentry kind="src" path="exercicioArray/src/com/exercicios/src"/>
+	<classpathentry kind="src" path="for_each/src"/>
+	<classpathentry kind="src" path="matriz/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="matriz/bin"/>
+</classpath>
